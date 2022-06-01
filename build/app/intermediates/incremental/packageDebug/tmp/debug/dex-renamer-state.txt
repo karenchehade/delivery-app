@@ -1,4 +1,4 @@
-#Wed Jun 01 07:33:14 EEST 2022
-base.0=C\:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Jun 01 09:56:00 EEST 2022
+base.0=C\:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\delivery-app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
