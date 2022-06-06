@@ -309,7 +309,7 @@ class _DetailPageState extends State<DetailPage> {
                   ),
                 )
             ]),
-            //favourite
+            //favorite
             Positioned(
                 top: 670,
                 left: 25,
@@ -320,15 +320,15 @@ class _DetailPageState extends State<DetailPage> {
                         height: 50,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Color(0xFFfbc33e)),
+                            color: const Color(0xFFfbc33e)),
                         child:
-                            IconButton(icon :Icon(Icons.favorite_border),
+                            IconButton(icon :const Icon(Icons.favorite_border),
                             onPressed: () =>fav.favCounter(),
                             color: Colors.white)),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
-                    Text(
+                    const Text(
                       "Add to favorite",
                       style: TextStyle(color: Color(0xFFfbc33e), fontSize: 18),
                     )
