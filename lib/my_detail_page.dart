@@ -1,13 +1,9 @@
 import 'dart:convert';
 import 'package:delivery/detail_controller.dart';
 import 'package:get/get.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'content_page.dart';
-import 'my_home_page.dart';
-
 class DetailPage extends StatefulWidget {
   const DetailPage({Key? key}) : super(key: key);
 
@@ -47,7 +43,7 @@ class _DetailPageState extends State<DetailPage> {
                 top: 50,
                 left: 10,
                 child: IconButton(
-                  onPressed: () => Get.to(() => ContentPage()),
+                  onPressed: () => Get.to(() => const ContentPage()),
                   icon: const Icon(Icons.home_outlined),
                   color: Colors.white,
                 )),
@@ -62,7 +58,7 @@ class _DetailPageState extends State<DetailPage> {
                 margin: const EdgeInsets.only(left: 25, right: 25),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color(0xFFebf8fd),
+                  color: const Color(0xFFebf8fd),
                 ),
                 child: Container(
                   padding: const EdgeInsets.only(left: 20, right: 20),
@@ -72,8 +68,8 @@ class _DetailPageState extends State<DetailPage> {
                         radius: 40,
                         backgroundImage: AssetImage(Get.arguments['img']),
                       ),
-                      SizedBox(
-                        width: 10,
+                      const SizedBox(
+                        width: 5,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -81,15 +77,15 @@ class _DetailPageState extends State<DetailPage> {
                         children: [
                           Text(
                             Get.arguments['name'],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Color(0xFF3b3f42),
                                 fontSize: 18,
                                 decoration: TextDecoration.none),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Text(
+                          const Text(
                             "Top Level",
                             style: TextStyle(
                                 color: Color(0xFFfdebb2),
@@ -100,12 +96,12 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                       Expanded(child: Container()),
                       Container(
-                        width: 70,
+                        width:60,
                         height: 120,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
-                            color: Color(0xFFf3fafc)),
-                        child: Center(
+                            color: const Color(0xFFf3fafc)),
+                        child: const Center(
                           child: Icon(
                             Icons.notifications,
                             color: Color(0xFF69c5df),
@@ -126,7 +122,7 @@ class _DetailPageState extends State<DetailPage> {
               child: Container(
                 width: 80,
                 height: 80,
-                color: Color(0xFFf9fbfc),
+                color: const Color(0xFFf9fbfc),
               ),
             ),
             Positioned(
@@ -140,12 +136,12 @@ class _DetailPageState extends State<DetailPage> {
                 height: 240,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFFfcfffe),
+                    color: const Color(0xFFfcfffe),
                     boxShadow: [
                       BoxShadow(
                           blurRadius: 20,
                           spreadRadius: 1,
-                          offset: Offset(0, 10),
+                          offset: const Offset(0, 10),
                           color: Colors.grey.withOpacity(0.2))
                     ]),
                 child: Container(
@@ -153,33 +149,35 @@ class _DetailPageState extends State<DetailPage> {
                       left: 20, top: 10, bottom: 10, right: 20),
                   child: Column(
                     children: [
+                      // ignore: avoid_unnecessary_containers
                       Container(
                           child: Row(
                         children: [
                           Text(
                             Get.arguments['title'],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 30, fontWeight: FontWeight.w500),
                           ),
                           Expanded(child: Container())
                         ],
                       )),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
+                      // ignore: sized_box_for_whitespace
                       Container(
                         width: width,
                         child: Text(
                           Get.arguments['text'],
                           style:
-                              TextStyle(fontSize: 20, color: Color(0xFFb8b8b8)),
+                              const TextStyle(fontSize: 20, color: Color(0xFFb8b8b8)),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
-                      Divider(
+                      const Divider(
                         thickness: 1.0,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Row(
@@ -188,8 +186,8 @@ class _DetailPageState extends State<DetailPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(Icons.watch_later, color: Color(0xFF69c5df)),
-                              SizedBox(
+                              const Icon(Icons.watch_later, color: Color(0xFF69c5df)),
+                              const SizedBox(
                                 width: 5,
                               ),
                               Column(
@@ -198,12 +196,12 @@ class _DetailPageState extends State<DetailPage> {
                                 children: [
                                   Text(
                                     Get.arguments['time'],
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 18,
                                         color: Color(0xFF303030),
                                         fontWeight: FontWeight.w700),
                                   ),
-                                  Text(
+                                  const Text(
                                     "Deadline",
                                     style: TextStyle(
                                         fontSize: 18, color: Color(0xFFacacac)),
@@ -215,9 +213,9 @@ class _DetailPageState extends State<DetailPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(Icons.monetization_on,
+                              const Icon(Icons.monetization_on,
                                   color: Color(0xFFfb8483)),
-                              SizedBox(
+                              const SizedBox(
                                 width: 3,
                               ),
                               Column(
@@ -226,12 +224,12 @@ class _DetailPageState extends State<DetailPage> {
                                 children: [
                                   Text(
                                     Get.arguments['prize'],
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 18,
                                         color: Color(0xFF303030),
                                         fontWeight: FontWeight.w700),
                                   ),
-                                  Text(
+                                  const Text(
                                     "Prize",
                                     style: TextStyle(
                                         fontSize: 18, color: Color(0xFFacacac)),
@@ -243,14 +241,14 @@ class _DetailPageState extends State<DetailPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(Icons.star, color: Color(0xFFfbc33e)),
-                              SizedBox(
-                                width: 3,
+                              const Icon(Icons.star, color: Color(0xFFfbc33e)),
+                              const SizedBox(
+                                width: 2,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text(
                                     "Top Level",
                                     style: TextStyle(
@@ -278,9 +276,10 @@ class _DetailPageState extends State<DetailPage> {
                 top: 540,
                 left: 25,
                 height: 40,
+                // ignore: avoid_unnecessary_containers
                 child: Container(
                   child: RichText(
-                      text: TextSpan(
+                      text: const TextSpan(
                           text: "Total Participants ",
                           style: TextStyle(
                               fontWeight: FontWeight.w700,

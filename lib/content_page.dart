@@ -305,7 +305,7 @@ class ContentPage extends StatelessWidget {
                                       ),
                                       child: Container(
                                         padding: const EdgeInsets.only(
-                                            left: 20, right: 20),
+                                            left: 10, right: 10),
                                         child: Row(
                                           children: [
                                             CircleAvatar(
@@ -314,7 +314,7 @@ class ContentPage extends StatelessWidget {
                                                   AssetImage(list[i]['img']),
                                             ),
                                             const SizedBox(
-                                              width: 5,
+                                              width: 3,
                                             ),
                                             Column(
                                               mainAxisAlignment:
@@ -326,7 +326,7 @@ class ContentPage extends StatelessWidget {
                                                   list[i]['status'],
                                                   style: const TextStyle(
                                                       color: Color(0xFFfdebb2),
-                                                      fontSize: 12,
+                                                      fontSize: 10,
                                                       decoration:
                                                           TextDecoration.none),
                                                 ),
@@ -334,7 +334,7 @@ class ContentPage extends StatelessWidget {
                                                   height: 5,
                                                 ),
                                                 SizedBox(
-                                                  width: 170,
+                                                  width: 150,
                                                   child: Text(
                                                     list[i]['text'],
                                                     style: const TextStyle(
@@ -351,8 +351,8 @@ class ContentPage extends StatelessWidget {
                                             Expanded(child: Container()),
                                             // ignore: sized_box_for_whitespace
                                             Container(
-                                              width: 70,
-                                              height: 70,
+                                              width: 50,
+                                              height: 50,
                                               child: Text(
                                                 list[i]['time'],
                                                 style: const TextStyle(

@@ -1,21 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\delivery-app\\build\\app\\intermediates\\merged_res\\debug\\values-am_values-am.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Typhon\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-am\\values-am.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\delivery-app\\build\\app\\intermediates\\merged_res\\debug\\values-pt-rBR_values-pt-rBR.arsc.flat",
             "map": [
                 {
@@ -31,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\delivery-app\\build\\app\\intermediates\\merged_res\\debug\\values-uk_values-uk.arsc.flat",
+            "outputFile": "C:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\delivery-app\\build\\app\\intermediates\\merged_res\\debug\\values-am_values-am.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\Typhon\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-uk\\values-uk.xml",
+                    "source": "C:\\Users\\Typhon\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -50,6 +35,21 @@
             "map": [
                 {
                     "source": "C:\\Users\\Typhon\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Typhon\\Documents\\flutter\\delivery-app\\delivery-app\\build\\app\\intermediates\\merged_res\\debug\\values-uk_values-uk.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Typhon\\.gradle\\caches\\transforms-3\\acbce933e4b464a5224ed377a62db1f5\\transformed\\core-1.6.0\\res\\values-uk\\values-uk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

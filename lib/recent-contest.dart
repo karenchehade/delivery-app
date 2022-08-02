@@ -1,11 +1,6 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class RecentContest extends StatefulWidget {
   const RecentContest({Key? key}) : super(key: key);
@@ -36,11 +31,11 @@ class _RecentContestState extends State<RecentContest> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF69c5df),
+        backgroundColor: const Color(0xFF69c5df),
         leading: IconButton(onPressed: () =>Get.back() ,
-         icon: Icon(Icons.arrow_back_ios)) 
+         icon: const Icon(Icons.arrow_back_ios)) 
          ),
-      backgroundColor: Color(0xFFcbe6f6),
+      backgroundColor: const Color(0xFFcbe6f6),
       body:isLoading? Container(
         margin: const EdgeInsets.only(left: 20, top: 10, right: 10),
         child: Column(children: [
@@ -70,15 +65,16 @@ class _RecentContestState extends State<RecentContest> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(30),
                           color:
-                              i.isEven ? Color(0xFF69c5df) : Color(0xFF9294cc)),
+                              i.isEven ? const Color(0xFF69c5df) : const Color(0xFF9294cc)),
                       child: Column(
                         children: [
+                          // ignore: avoid_unnecessary_containers
                           Container(
                               child: Row(
                             children: [
                               Text(
                                 info[i]['title'],
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontSize: 30,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white),
@@ -86,23 +82,25 @@ class _RecentContestState extends State<RecentContest> {
                               Expanded(child: Container())
                             ],
                           )),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
+                          // ignore: sized_box_for_whitespace
                           Container(
                             width: MediaQuery.of(context).size.width,
                             child: Text(
                               info[i]['text'],
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 20, color: Color(0xFFb8eefc)),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          Divider(
+                          const Divider(
                             thickness: 1.0,
                           ),
                           Row(children: [
                             for (int i = 0; i < 4; i++)
+                              // ignore: sized_box_for_whitespace
                               Container(
                                 width: 50,
                                 height: 50,
@@ -125,7 +123,7 @@ class _RecentContestState extends State<RecentContest> {
         ]),
       ): Container(
               padding: const EdgeInsets.only(top: 50),
-              child: CircularProgressIndicator(
+              child: const CircularProgressIndicator(
                 backgroundColor: Color(0xFF69c5df),
                 color: Color(0xFF3b3f42),
               )),

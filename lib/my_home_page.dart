@@ -1,5 +1,4 @@
 import 'package:delivery/content_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_getx/content_page.dart';
 import 'package:get/get.dart';
@@ -8,7 +7,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF69c5df),
+      backgroundColor: const Color(0xFF69c5df),
       body:
       Stack(
           children: [
@@ -19,7 +18,7 @@ class MyHomePage extends StatelessWidget {
               child: Container(
                 height: 700,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("img/background.jpg"),
                         fit:BoxFit.cover
@@ -33,33 +32,33 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Pick Your Favourite",
+                const Text("Pick Your Favourite",
                 style: TextStyle(
                   fontSize: 32,
                   color: Colors.white,
                   fontWeight: FontWeight.w600
                 ),),
-                Text("Contests",
+                const Text("Contests",
                   style: TextStyle(
                       fontSize: 32,
                       color: Colors.white,
                       fontWeight: FontWeight.w600
                   ),),
-                SizedBox(height: 40,),
+                const SizedBox(height: 40,),
                 SizedBox(
                   width: MediaQuery.of(context).size.width-25,
-                        child: Text("We make great design work "
+                        child: const Text("We make great design work "
                             "happen with our great community designer",
                         style: TextStyle(
                           color: Colors.white60
                         ),)),
-                SizedBox(height: 40,),
+                const SizedBox(height: 40,),
                 Container(
                   width: 200,
                   height: 70,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color(0xFffbc33e)
+                    color: const Color(0xFffbc33e)
                   ),
 
 
@@ -67,12 +66,12 @@ class MyHomePage extends StatelessWidget {
 
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
-                        primary: Color(0xFFfbc33e),
+                        primary: const Color(0xFFfbc33e),
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
                       ),),
-                      onPressed: ()=>Get.to(()=>ContentPage()),
-                      child: Text(
+                      onPressed: ()=>Get.to(()=>const ContentPage()),
+                      child: const Text(
                         "Get started",
                         style: TextStyle(
                           color:Colors.white
@@ -81,7 +80,7 @@ class MyHomePage extends StatelessWidget {
                     ),
 
                 ),
-                SizedBox(height: 70,),
+                const SizedBox(height: 70,),
 
               ],
             ))

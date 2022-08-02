@@ -1,12 +1,11 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ContentController extends GetxController {
   List list = [].obs;
   List info = [].obs;
-  RxBool isLoading = false.obs;
+  RxBool isLoading = true.obs;
 
   BuildContext context;
   ContentController(this.context);
@@ -16,6 +15,7 @@ class ContentController extends GetxController {
     // readData();
     // sleep(const Duration(seconds: 5));
     super.onInit();
+     isLoading(false);
   }
 
   @override
